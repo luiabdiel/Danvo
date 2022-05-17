@@ -38,6 +38,10 @@ a {
   overflow: hidden;
 
   background-color: var(--backgroundColor);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .container {
@@ -121,5 +125,39 @@ header .container {
 
 .showCaseArea .container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+}
+
+.bigTitle {
+  font-size: 1.4rem;
+  line-height: 1.4;
+  color: var(--darkOne);
+
+  text-transform: capitalize;
+}
+
+.text {
+  color: var(--lightOne);
+
+  font-size: 1.1rem;
+  line-height: 2.3;
+
+  margin: 1.9rem 0 2.5rem;
+  max-width: 37.5rem;
+}
+
+.showCaseArea .btn {
+  box-shadow: 0 0 40px 2px rgba(0, 0, 0, 0.05);
+}
+
+.person {
+  width: 123%;
+
+  transform: translate(15%, 25px);
+}
+
+.bottomArea {
+  display: none;
 }
