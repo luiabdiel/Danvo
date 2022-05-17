@@ -118,3 +118,8 @@ header .container {
   background-color: var(--hoverColor);
   transform: scale(1.05) !important;
 }
+
+.showCaseArea .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
